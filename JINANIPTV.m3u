@@ -12,9 +12,9 @@ http://10.10.10.1:11111/rtp/239.253.242.6:8000
 #EXTINF:-1 tvg-id="6" tvg-name="CCTV5+" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5+.png"group-title="央视 HD",CCTV5+ HD
 http://10.10.10.1:11111/rtp/239.253.242.80:8000
 #EXTINF:-1 tvg-id="7" tvg-name="CCTV6" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV6.png" group-title="央视 HD",CCTV6 HD
-http://10.10.10.1:11111/rtp/239.253.242.235:8000
+http://10.10.10.1:11111/rtp/239.253.242.7:8000
 #EXTINF:-1 tvg-id="8" tvg-name="CCTV7" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV7.png" group-title="央视 HD",CCTV7 HD
-http://10.10.10.1:11111/rtp/239.253.242.233:8000
+http://10.10.10.1:11111/rtp/239.253.242.235:8000
 #EXTINF:-1 tvg-id="9" tvg-name="CCTV8" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV8.png" group-title="央视 HD",CCTV8 HD
 http://10.10.10.1:11111/rtp/239.253.242.9:8000
 #EXTINF:-1 tvg-id="10" tvg-name="CCTV9" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV9.png" group-title="央视 HD",CCTV9 HD
