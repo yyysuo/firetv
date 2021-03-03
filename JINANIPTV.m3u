@@ -75,12 +75,12 @@ http://10.10.10.1:11111/rtp/239.253.242.49:8000
 http://10.10.10.1:11111/rtp/239.253.242.38:8000
 #EXTINF:-1 tvg-id="73" tvg-name="教育1台" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/中国教育1台.png" group-title="卫视",中国教育1台 HD
 http://10.10.10.1:11111/rtp/239.253.242.110:8000
-#EXTINF:-1 tvg-id="37" tvg-name="旅游卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/lvyou.png" group-title="卫视",旅游卫视 HD
-http://10.10.10.1:11111/rtp/239.253.242.179:8000
+#EXTINF:-1 tvg-id="37" tvg-name="旅游卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/lvyou.png" group-title="卫视",海南卫视 HD
+http://10.10.10.1:11111/rtp/239.253.242.35:8000
 #EXTINF:-1 tvg-id="54" tvg-name="山西卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/shanxi_.png" group-title="卫视",山西卫视
 http://10.10.10.1:11111/rtp/239.253.242.48:8000
 #EXTINF:-1 tvg-id="56" tvg-name="四川卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/sichuan.png" group-title="卫视",四川卫视 HD
-http://10.10.10.1:11111/rtp/239.253.242.180:8000
+http://10.10.10.1:11111/rtp/239.253.242.50:8000
 #EXTINF:-1 tvg-id="51" tvg-name="吉林卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jilin.png" group-title="卫视",吉林卫视
 http://10.10.10.1:11111/rtp/239.253.242.46:8000
 #EXTINF:-1 tvg-id="47" tvg-name="河南卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/henan.png" group-title="卫视",河南卫视
@@ -100,7 +100,7 @@ http://10.10.10.1:11111/rtp/239.253.242.60:8000
 #EXTINF:-1 tvg-id="71" tvg-name="西藏卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/xizang.png" group-title="卫视",西藏卫视
 http://10.10.10.1:11111/rtp/239.253.242.56:8000
 #EXTINF:-1 tvg-id="42" tvg-name="甘肃卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/gansu.png" group-title="卫视",甘肃卫视 HD
-http://10.10.10.1:11111/rtp/239.253.242.176:8000
+http://10.10.10.1:11111/rtp/239.253.242.52:8000
 #EXTINF:-1 tvg-id="69" tvg-name="金鹰卡通" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/jinyingkatong.png" group-title="少儿",金鹰卡通
 http://10.10.10.1:11111/rtp/239.253.242.62:8000
 #EXTINF:-1 tvg-id="67" tvg-name="卡酷动画" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/kaku.png" group-title="少儿",卡酷动画
@@ -112,15 +112,15 @@ http://10.10.10.1:11111/rtp/239.253.242.63:8000
 #EXTINF:-1 tvg-id="1428" tvg-name="山东体育" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_tiyu.png" group-title="山东",山东体育 HD
 http://10.10.10.1:11111/rtp/239.253.242.22:8000
 #EXTINF:-1 tvg-id="1427" tvg-name="山东齐鲁" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_qilu.png" group-title="山东",山东齐鲁 HD
-http://10.10.10.1:11111/rtp/239.253.242.114:8000
+http://10.10.10.1:11111/rtp/239.253.242.18:8000
 #EXTINF:-1 tvg-id="1430" tvg-name="山东公共" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_gonggong.png" group-title="山东",山东公共 HD
 http://10.10.10.1:11111/rtp/239.253.242.23:8000
 #EXTINF:-1 tvg-id="1433" tvg-name="山东综艺" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_zongyi.png" group-title="山东",山东综艺 HD
-http://10.10.10.1:11111/rtp/239.253.242.159:8000
+http://10.10.10.1:11111/rtp/239.253.242.21:8000
 #EXTINF:-1 tvg-id="1434" tvg-name="山东生活" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_shenghuo.png" group-title="山东",山东生活 HD
-http://10.10.10.1:11111/rtp/239.253.242.151:8000
+http://10.10.10.1:11111/rtp/239.253.242.20:8000
 #EXTINF:-1 tvg-id="1432" tvg-name="山东影视" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_yingshi.png" group-title="山东",山东影视 HD
-http://10.10.10.1:11111/rtp/239.253.242.160:8000
+http://10.10.10.1:11111/rtp/239.253.242.19:8000
 #EXTINF:-1 tvg-id="1431" tvg-name="山东少儿" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_shaoer.png" group-title="山东",山东少儿 HD
 http://10.10.10.1:11111/rtp/239.253.242.25:8000
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/qt/sd_nongke.png" tvg-id="1429" tvg-name="山东农科" group-title="山东",山东农科 HD
@@ -141,11 +141,11 @@ http://10.10.10.1:11111/rtp/239.253.242.252:8000
 http://10.10.10.1:11111/rtp/239.253.242.253:8000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="山东",QTV6
 http://10.10.10.1:11111/rtp/239.253.242.254:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="山东",胶州电视台 HD
+#EXTINF:-1 tvg-id="" tvg-name="济南教育" tvg-logo="" group-title="山东",济南教育
 http://10.10.10.1:11111/rtp/239.253.242.246:8000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="山东",城阳电视台
 http://10.10.10.1:11111/rtp/239.253.242.239:8000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="山东",平度电视台
+#EXTINF:-1 tvg-id="" tvg-name="济南都市" tvg-logo="" group-title="山东",济南都市
 http://10.10.10.1:11111/rtp/239.253.242.248:8000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="山东",莱西综合 HD
 http://10.10.10.1:11111/rtp/239.253.242.247:8000
