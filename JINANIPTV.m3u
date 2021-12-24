@@ -16,7 +16,7 @@ http://10.10.10.1:11111/rtp/239.253.242.193:8000
 #EXTINF:-1 tvg-id="8" tvg-name="CCTV7 - 国防军事频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV7.png" group-title="央视 HD",CCTV7 HD
 http://10.10.10.1:11111/rtp/239.253.242.235:8000
 #EXTINF:-1 tvg-id="9" tvg-name="CCTV8 - 电视剧频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV8.png" group-title="央视 HD",CCTV8 HD
-http://10.10.10.1:11111/rtp/239.253.242.193:8000
+http://10.10.10.1:11111/rtp/239.253.242.194:8000
 #EXTINF:-1 tvg-id="10" tvg-name="CCTV9 - 纪录频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV9.png" group-title="央视 HD",CCTV9 HD
 http://10.10.10.1:11111/rtp/239.253.242.79:8000
 #EXTINF:-1 tvg-id="11" tvg-name="CCTV10 - 科教频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV10.png" group-title="央视 HD",CCTV10 HD
