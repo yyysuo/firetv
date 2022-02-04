@@ -31,11 +31,11 @@ http://10.10.10.1:11111/rtp/239.253.242.14:8000
 http://10.10.10.1:11111/rtp/239.253.242.238:8000
 #EXTINF:-1 tvg-id="16" tvg-name="CCTV15 - 音乐频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV15.png" group-title="央视 HD",CCTV15 HD
 http://10.10.10.1:11111/rtp/239.253.242.16:8000
-#EXTINF:-1 tvg-id="16" tvg-name="CCTV16 - 奥运频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="央视 4K",CCTV16 4K
+#EXTINF:-1 tvg-id="7249" tvg-name="CCTV16 - 奥运频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV16.png" group-title="央视 4K",CCTV16 4K
 http://10.10.10.1:11111/rtp/239.253.242.116:8000
-#EXTINF:-1 tvg-id="17" tvg-name="CGTN - 中国环球电视网" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/cgtn.png" group-title="央视 HD",CGTN HD
+#EXTINF:-1 tvg-id="20" tvg-name="CGTN - 中国环球电视网" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/cgtn.png" group-title="央视 HD",CGTN HD
 http://10.10.10.1:11111/rtp/239.253.242.17:8000
-#EXTINF:-1 tvg-id="19" tvg-name="CCTV17 - 农村农业频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV17.png" group-title="央视 HD",CCTV17 UHD
+#EXTINF:-1 tvg-id="17" tvg-name="CCTV17 - 农村农业频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV17.png" group-title="央视 HD",CCTV17 UHD
 http://10.10.10.1:11111/rtp/239.253.242.168:8000
 #EXTINF:-1 tvg-id="28" tvg-name="浙江卫视" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/zhejiang.png" group-title="卫视",浙江卫视 HD
 http://10.10.10.1:11111/rtp/239.253.242.84:8000
