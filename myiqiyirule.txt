@@ -1,14 +1,14 @@
 ||transfer.iqiyi.com^
 ||comic.iqiyi.com^
 ||dx-statics-web.iqiyi.com^
-||m-glider-xiu.pps.tv
+||m-glider-xiu.pps.tv^
 ||cooperation.ssports.com^
 ||sns-paopao.iqiyi.com^
 ||c-uaa.if.iqiyi.com^
 ||api-yuedu.iqiyi.com^
 ||recbiz.ssports.com^
 ||static-s.iqiyi.com^
-||i.qchannel03.cn
+||i.qchannel03.cn^
 ||cmts.iqiyi.com^
 ||dx-cmts.iqiyi.com^
 ||bar-i.iqiyi.com^
@@ -27,8 +27,8 @@
 ||homeai-bsl.iqiyi.com^
 ||dx-cmts.iqiyi.com^
 ||cmonitor.iqiyi.com^
-||m-glider-xiu.pps.tv
+||m-glider-xiu.pps.tv^
 ||sns-paopao.iqiyi.com^
-||qchannel01.cn
+||qchannel01.cn^
 ||apisix-test.iqiyi.com^
 ||livenet.video.iqiyi.com^
