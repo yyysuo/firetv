@@ -1,19 +1,13 @@
 payload:
-  # Unbreak
+  # MyRule
   # > Google
-  - DOMAIN-SUFFIX,blog.google
-  - DOMAIN-SUFFIX,googletraveladservices.com
-  - DOMAIN,clientservices.googleapis.com
-  - DOMAIN,dl.google.com
-  - DOMAIN,dl.l.google.com
-  - DOMAIN,update.googleapis.com
-  # >> Firebase Cloud Messaging
-  - DOMAIN,mtalk.google.com
-  - DOMAIN,alt1-mtalk.google.com
-  - DOMAIN,alt2-mtalk.google.com
-  - DOMAIN,alt3-mtalk.google.com
-  - DOMAIN,alt4-mtalk.google.com
-  - DOMAIN,alt5-mtalk.google.com
-  - DOMAIN,alt6-mtalk.google.com
-  - DOMAIN,alt7-mtalk.google.com
-  - DOMAIN,alt8-mtalk.google.com
+  - IP-CIDR,8.8.8.8/32,no-resolve
+  - IP-CIDR,8.8.4.4/32,no-resolve
+  - IP-CIDR6,2001:4860:4860::8888/128,no-resolve
+  - IP-CIDR6,2001:4860:4860::8844/128,no-resolve
+  - DOMAIN,dns.google.com
+  # >> CloudFlare
+  - IP-CIDR,1.1.1.1/32,no-resolve
+  - IP-CIDR6,2606:4700:4700::1111/128,no-resolve
+  - DOMAIN,cp.cloudflare.com
+  - DOMAIN,firetvcaptiveportal.com
