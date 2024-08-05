@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1 - 综合频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="央视 HD",CCTV1 HD
-udp://@@239.253.242.77:8000
+udp://@239.253.242.77:8000
 #EXTINF:-1 tvg-id="2" tvg-name="CCTV2 - 财经频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="央视 HD",CCTV2 HD
-udp://@@239.253.242.234:8000
+udp://@239.253.242.234:8000
 #EXTINF:-1 tvg-id="3" tvg-name="CCTV3 - 综艺频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV3.png" group-title="央视 HD",CCTV3 HD
 udp://@239.253.242.191:8000
 #EXTINF:-1 tvg-id="4" tvg-name="CCTV4 - 中文国际频道" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="央视 HD",CCTV4 HD
