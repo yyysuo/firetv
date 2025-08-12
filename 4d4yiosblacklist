@@ -5,8 +5,8 @@
 // @author Jichao Wu
 // @license MIT
 // @namespace com.jichaowu.hipda
-// @updateURL   https://github.com/yyysuo/firetv/raw/refs/heads/master/4d4yiosblacklist
-// @downloadURL	https://github.com/yyysuo/firetv/raw/refs/heads/master/4d4yiosblacklist
+// @updateURL   https://github.com/yyysuo/firetv/raw/refs/heads/master/4d4yiosblacklist.js
+// @downloadURL	https://github.com/yyysuo/firetv/raw/refs/heads/master/4d4yiosblacklist.js
 // @grant GM_getValue
 // @grant GM_setValue
 // @grant GM_addStyle
