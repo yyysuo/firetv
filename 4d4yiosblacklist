@@ -118,7 +118,6 @@ function addConfigDiv() {
         var myThreadsLink = document.createElement('a');
         myThreadsLink.textContent = '我的帖子';
         myThreadsLink.href = 'https://www.4d4y.com/forum/my.php?item=threads';
-        myThreadsLink.target = '_blank';
         umenu.appendChild(myThreadsLink);
 
         // 分隔符
@@ -128,8 +127,25 @@ function addConfigDiv() {
         var myPostsLink = document.createElement('a');
         myPostsLink.textContent = '我的回复';
         myPostsLink.href = 'https://www.4d4y.com/forum/my.php?item=posts';
-        myPostsLink.target = '_blank';
         umenu.appendChild(myPostsLink);
+
+        // 分隔符
+        umenu.appendChild(document.createTextNode(" | "));
+
+        // 我的收藏
+        var myfavoritesLink = document.createElement('a');
+        myfavoritesLink.textContent = '我的收藏';
+        myfavoritesLink.href = 'https://www.4d4y.com/forum/my.php?item=favorites&type=thread';
+        umenu.appendChild(myfavoritesLink);
+
+        // 分隔符
+        umenu.appendChild(document.createTextNode(" | "));
+
+        // D板
+        var dLink = document.createElement('a');
+        dLink.textContent = 'D板';
+        dLink.href = 'https://www.4d4y.com/forum/forumdisplay.php?fid=2';
+        umenu.appendChild(dLink);
     }
     // ================================================================
 
