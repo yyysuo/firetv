@@ -95,14 +95,44 @@ function addConfigDiv() {
     	q('#hp_blacklist_remove_btn').style.display = 'none';
     }
 
-    document.getElementById('umenu').appendChild(document.createTextNode(" | "));
-    var menuitem=document.createElement('a');
-    menuitem.innerHTML="黑名单";
-    menuitem.href='javascript:void(0)';
-    document.getElementById('umenu').appendChild(menuitem);
-    menuitem.addEventListener('click', function(){
-    	hp_cfg.style.display = hp_cfg.style.display === 'none' ? '' : 'none';
-    }, false);
+    // ===== 修改处：在用户菜单(#umenu)上添加 黑名单、我的帖子、我的回复 三个链接 =====
+    var umenu = document.getElementById('umenu');
+    if (umenu) {
+        // separator before our links
+        umenu.appendChild(document.createTextNode(" | "));
+
+        // 黑名单（原来的功能：弹出配置面板）
+        var blacklistLink = document.createElement('a');
+        blacklistLink.textContent = '黑名单';
+        blacklistLink.href = 'javascript:void(0)';
+        blacklistLink.style.cursor = 'pointer';
+        umenu.appendChild(blacklistLink);
+        blacklistLink.addEventListener('click', function(){
+            hp_cfg.style.display = hp_cfg.style.display === 'none' ? '' : 'none';
+        }, false);
+
+        // 分隔符
+        umenu.appendChild(document.createTextNode(" | "));
+
+        // 我的帖子
+        var myThreadsLink = document.createElement('a');
+        myThreadsLink.textContent = '我的帖子';
+        myThreadsLink.href = 'https://www.4d4y.com/forum/my.php?item=threads';
+        myThreadsLink.target = '_blank';
+        umenu.appendChild(myThreadsLink);
+
+        // 分隔符
+        umenu.appendChild(document.createTextNode(" | "));
+
+        // 我的回复
+        var myPostsLink = document.createElement('a');
+        myPostsLink.textContent = '我的回复';
+        myPostsLink.href = 'https://www.4d4y.com/forum/my.php?item=posts';
+        myPostsLink.target = '_blank';
+        umenu.appendChild(myPostsLink);
+    }
+    // ================================================================
+
     hp_cfg.style.display = 'none';
 }
 addConfigDiv();
@@ -113,7 +143,7 @@ function appendControl(){     // 添加[屏蔽]按钮
 
   for (var i = s.snapshotLength - 1; i >= 0; i--) {
     var t = s.snapshotItem(i);
-      
+
     var a1=document.createElement('a');
     a1.innerHTML = '屏蔽';
     a1.href = '###';
@@ -401,7 +431,7 @@ function updateList(action) {
 		console.log('updateList -> not login');
 		return;
 	}
-    
+
     //fetch latest data
     console.log('fetch latest data');
     fetchRecord(function(record, error) {
