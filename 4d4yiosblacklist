@@ -90,6 +90,12 @@
             dLink.textContent = 'D板';
             dLink.href = 'https://www.4d4y.com/forum/forumdisplay.php?fid=2';
             umenu.appendChild(dLink);
+
+            umenu.appendChild(document.createTextNode(" | "));
+            var remind = document.createElement('a');
+            remind.textContent = '提醒';
+            remind.href = 'https://www.4d4y.com/forum/notice.php?filter=threads';
+            umenu.appendChild(remind);
         }
     }
     // 立即执行UI添加，特别是链接
