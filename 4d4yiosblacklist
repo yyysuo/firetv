@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HiPDA BlackList (Non-blocking Enhanced)
 // @description  4d4y.com论坛的黑名单插件, 支持使用iCloud账号同步, 支持与iOS客户端同步 (已优化加载)
-// @version      0.5
+// @version      0.6
 // @author       Jichao Wu (Modified by Gemini)
 // @license      MIT
 // @namespace    com.jichaowu.hipda.nonblocking
@@ -103,16 +103,26 @@
 
 
     // hi-pda-tools-by-2200
-    function appendControl(){     // 添加[屏蔽]按钮
+    function appendControl(){     // 添加[屏蔽]和[取消屏蔽]按钮
       var s = xpath("//div[@class='authorinfo']");
       for (var i = s.snapshotLength - 1; i >= 0; i--) {
         var t = s.snapshotItem(i);
+        // 屏蔽按钮
         var a1=document.createElement('a');
         a1.innerHTML = '屏蔽';
         a1.href = '###';
         a1.addEventListener('click', onBlockUser, false);
         t.appendChild(document.createTextNode(" | "));
         t.appendChild(a1);
+
+        // 取消屏蔽按钮 (临时显示)
+        var a2=document.createElement('a');
+        a2.innerHTML = '取消屏蔽';
+        a2.href = '###';
+        a2.className = 'hp_toggle_blocked_btn'; // 添加class便于统一修改文本
+        a2.addEventListener('click', onToggleBlockedPosts, false);
+        t.appendChild(document.createTextNode(" | "));
+        t.appendChild(a2);
       }
     }
     // 立即添加屏蔽按钮
@@ -142,29 +152,87 @@
         }
     }
 
-    // hi-pda-tools-by-2200
+    // ================= 【新增】屏蔽功能相关全局变量与处理函数 ==================
+    var areBlockedPostsTemporarilyVisible = false; // 全局变量，用于控制是否临时显示被屏蔽的帖子
+
+    function onToggleBlockedPosts(e) {
+        e.preventDefault();
+        areBlockedPostsTemporarilyVisible = !areBlockedPostsTemporarilyVisible;
+
+        // 重新执行隐藏帖子的逻辑，它会根据新状态来决定显示或隐藏
+        removeBlockedPost();
+
+        // 更新页面上所有“取消屏蔽”按钮的文本
+        var toggleButtons = document.querySelectorAll('.hp_toggle_blocked_btn');
+        var newText = areBlockedPostsTemporarilyVisible ? '恢复屏蔽' : '取消屏蔽';
+        toggleButtons.forEach(function(btn) {
+            btn.innerHTML = newText;
+        });
+    }
+
+    // ================= 【核心修改】屏蔽帖子逻辑 ==================
     function removeBlockedPost() {
         if (location.href.indexOf('viewthread.php') !== -1) {
             var s = xpath("//div[@class='postinfo']");
             for (var i = s.snapshotLength - 1; i >= 0; i--) {
                 var t = s.snapshotItem(i);
                 var a = t.getElementsByTagName('a')[0];
-                if( a != undefined){
-                    t.parentNode.parentNode.parentNode.parentNode.style.display = isUserInBlockList(a.text) ? 'none' : '';
+                if (a === undefined) continue;
+
+                var postContainer = t.parentNode.parentNode.parentNode.parentNode;
+                var postContent = postContainer.querySelector('.postmessage'); // 帖子的主要内容区域
+                if (!postContent) continue;
+
+                var isBlocked = isUserInBlockList(a.text);
+
+                if (isBlocked) {
+                    postContainer.classList.add('hp_is_blocked'); // 给楼层添加一个标记，方便“取消屏蔽”功能识别
+                    var blockedMessage = postContainer.querySelector('.hp_blocked_message');
+
+                    // 如果“发言已被屏蔽”的提示不存在，则创建它
+                    if (!blockedMessage) {
+                        blockedMessage = document.createElement('div');
+                        blockedMessage.className = 'hp_blocked_message';
+                        blockedMessage.textContent = '发言已被屏蔽';
+                        blockedMessage.style.padding = '20px';
+                        blockedMessage.style.textAlign = 'center';
+                        blockedMessage.style.color = '#888';
+                        // 将提示信息插入到内容区域之前
+                        postContent.parentNode.insertBefore(blockedMessage, postContent);
+                    }
+
+                    // 根据全局状态决定是显示内容还是显示“已屏蔽”提示
+                    if (areBlockedPostsTemporarilyVisible) {
+                        postContent.style.display = '';
+                        blockedMessage.style.display = 'none';
+                    } else {
+                        postContent.style.display = 'none';
+                        blockedMessage.style.display = '';
+                    }
+                } else {
+                    // 对于未被屏蔽的用户，确保其帖子是正常显示的
+                    if (postContainer.classList.contains('hp_is_blocked')) {
+                        postContent.style.display = '';
+                        var msg = postContainer.querySelector('.hp_blocked_message');
+                        if (msg) msg.remove();
+                        postContainer.classList.remove('hp_is_blocked');
+                    }
                 }
             }
         }
         if (location.href.indexOf('forumdisplay.php') !== -1) {
+            // 这部分的逻辑保持不变，因为请求是针对帖子楼层的
             var s = xpath("//td[@class='author']");
             for (var i = s.snapshotLength - 1; i >= 0; i--) { // 屏蔽BLACK_LIST的发帖
                 var t = s.snapshotItem(i);
                 var a = t.getElementsByTagName('a')[0];
-                if( a != undefined){
+                if (a !== undefined) {
                     t.parentNode.style.display = isUserInBlockList(a.text) ? 'none' : '';
                 }
             }
         }
     }
+
 
     // hi-pda-tools-by-2200
     function onBlockUser(e){      // [屏蔽] 按钮触发
