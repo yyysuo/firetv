@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HiPDA BlackList (Non-blocking Enhanced)
 // @description  4d4y.com论坛的黑名单插件, 支持使用iCloud账号同步, 支持与iOS客户端同步 (已优化加载)
-// @version      0.6
+// @version      0.7
 // @author       Jichao Wu (Modified by Gemini)
 // @license      MIT
 // @namespace    com.jichaowu.hipda.nonblocking
@@ -102,12 +102,12 @@
     addConfigDiv();
 
 
-    // hi-pda-tools-by-2200
+    // ================= 【核心修改】按钮添加逻辑 ==================
     function appendControl(){     // 添加[屏蔽]和[取消屏蔽]按钮
       var s = xpath("//div[@class='authorinfo']");
       for (var i = s.snapshotLength - 1; i >= 0; i--) {
         var t = s.snapshotItem(i);
-        // 屏蔽按钮
+        // 屏蔽按钮 (总是显示)
         var a1=document.createElement('a');
         a1.innerHTML = '屏蔽';
         a1.href = '###';
@@ -115,17 +115,24 @@
         t.appendChild(document.createTextNode(" | "));
         t.appendChild(a1);
 
+        // 创建“取消屏蔽”按钮及其分隔符的容器，默认隐藏
+        var a2_container = document.createElement('span');
+        a2_container.className = 'hp_toggle_blocked_container';
+        a2_container.style.display = 'none'; // 核心：默认隐藏
+
         // 取消屏蔽按钮 (临时显示)
         var a2=document.createElement('a');
         a2.innerHTML = '取消屏蔽';
         a2.href = '###';
-        a2.className = 'hp_toggle_blocked_btn'; // 添加class便于统一修改文本
+        a2.className = 'hp_toggle_blocked_btn'; // class用于更新文本和绑定事件
         a2.addEventListener('click', onToggleBlockedPosts, false);
-        t.appendChild(document.createTextNode(" | "));
-        t.appendChild(a2);
+
+        a2_container.appendChild(document.createTextNode(" | "));
+        a2_container.appendChild(a2);
+        t.appendChild(a2_container); // 将隐藏的容器添加到DOM中
       }
     }
-    // 立即添加屏蔽按钮
+    // 立即添加按钮
     appendControl();
 
     function updateUI() {
@@ -135,7 +142,7 @@
 
     function updateBlockListUI() {
         var dom = q('#hp_blacklist_blacklist');
-        if (!dom) return; // 防御式编程，因为面板可能还未添加到DOM
+        if (!dom) return; // 防御式编程
         var list = [];
         for (var i = 0; i < _list.length; i++) {
             var username = _list[i];
@@ -152,17 +159,15 @@
         }
     }
 
-    // ================= 【新增】屏蔽功能相关全局变量与处理函数 ==================
-    var areBlockedPostsTemporarilyVisible = false; // 全局变量，用于控制是否临时显示被屏蔽的帖子
+    // ================= 屏蔽功能相关全局变量与处理函数 ==================
+    var areBlockedPostsTemporarilyVisible = false;
 
     function onToggleBlockedPosts(e) {
         e.preventDefault();
         areBlockedPostsTemporarilyVisible = !areBlockedPostsTemporarilyVisible;
+        removeBlockedPost(); // 重新渲染所有帖子状态
 
-        // 重新执行隐藏帖子的逻辑，它会根据新状态来决定显示或隐藏
-        removeBlockedPost();
-
-        // 更新页面上所有“取消屏蔽”按钮的文本
+        // 更新页面上所有可见的“取消屏蔽”按钮的文本
         var toggleButtons = document.querySelectorAll('.hp_toggle_blocked_btn');
         var newText = areBlockedPostsTemporarilyVisible ? '恢复屏蔽' : '取消屏蔽';
         toggleButtons.forEach(function(btn) {
@@ -180,16 +185,20 @@
                 if (a === undefined) continue;
 
                 var postContainer = t.parentNode.parentNode.parentNode.parentNode;
-                var postContent = postContainer.querySelector('.postmessage'); // 帖子的主要内容区域
+                var postContent = postContainer.querySelector('.postmessage');
                 if (!postContent) continue;
+
+                // 找到该楼层的“取消屏蔽”按钮容器
+                var toggleBtnContainer = postContainer.querySelector('.hp_toggle_blocked_container');
 
                 var isBlocked = isUserInBlockList(a.text);
 
                 if (isBlocked) {
-                    postContainer.classList.add('hp_is_blocked'); // 给楼层添加一个标记，方便“取消屏蔽”功能识别
+                    if (toggleBtnContainer) toggleBtnContainer.style.display = ''; // **显示**“取消屏蔽”按钮
+
+                    postContainer.classList.add('hp_is_blocked');
                     var blockedMessage = postContainer.querySelector('.hp_blocked_message');
 
-                    // 如果“发言已被屏蔽”的提示不存在，则创建它
                     if (!blockedMessage) {
                         blockedMessage = document.createElement('div');
                         blockedMessage.className = 'hp_blocked_message';
@@ -197,11 +206,9 @@
                         blockedMessage.style.padding = '20px';
                         blockedMessage.style.textAlign = 'center';
                         blockedMessage.style.color = '#888';
-                        // 将提示信息插入到内容区域之前
                         postContent.parentNode.insertBefore(blockedMessage, postContent);
                     }
 
-                    // 根据全局状态决定是显示内容还是显示“已屏蔽”提示
                     if (areBlockedPostsTemporarilyVisible) {
                         postContent.style.display = '';
                         blockedMessage.style.display = 'none';
@@ -210,7 +217,8 @@
                         blockedMessage.style.display = '';
                     }
                 } else {
-                    // 对于未被屏蔽的用户，确保其帖子是正常显示的
+                    if (toggleBtnContainer) toggleBtnContainer.style.display = 'none'; // **隐藏**“取消屏蔽”按钮
+
                     if (postContainer.classList.contains('hp_is_blocked')) {
                         postContent.style.display = '';
                         var msg = postContainer.querySelector('.hp_blocked_message');
@@ -221,9 +229,8 @@
             }
         }
         if (location.href.indexOf('forumdisplay.php') !== -1) {
-            // 这部分的逻辑保持不变，因为请求是针对帖子楼层的
             var s = xpath("//td[@class='author']");
-            for (var i = s.snapshotLength - 1; i >= 0; i--) { // 屏蔽BLACK_LIST的发帖
+            for (var i = s.snapshotLength - 1; i >= 0; i--) {
                 var t = s.snapshotItem(i);
                 var a = t.getElementsByTagName('a')[0];
                 if (a !== undefined) {
@@ -235,7 +242,7 @@
 
 
     // hi-pda-tools-by-2200
-    function onBlockUser(e){      // [屏蔽] 按钮触发
+    function onBlockUser(e){
         var node = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByClassName('postinfo')[0].getElementsByTagName('a')[0];
         var username = node.text;
         addUser(username);
@@ -245,18 +252,15 @@
 
     var isCloudLogin = false;
 
-    // 核心修改：动态加载 CloudKit.js
     function loadCloudKit() {
         const script = document.createElement('script');
         script.src = 'https://cdn.apple-cloudkit.com/ck/2/cloudkit.js';
         script.onload = () => {
             console.log('cloudkit.js loaded successfully.');
-            // 加载成功后，手动触发 cloudkitloaded 事件
             window.dispatchEvent(new Event('cloudkitloaded'));
         };
         script.onerror = () => {
             console.error('Failed to load cloudkit.js. iCloud sync will be unavailable.');
-            // 可以在这里给用户一些提示
              const syncButton = q('#hp_blacklist_sync_button');
              if(syncButton) {
                  syncButton.innerHTML = 'iCloud加载失败';
@@ -266,7 +270,6 @@
         document.head.appendChild(script);
     }
 
-    // 将所有依赖CloudKit的逻辑放入一个初始化函数中
     function initializeCloudKitFeatures() {
         CloudKit.configure({
             locale: 'zh-cn',
@@ -282,7 +285,6 @@
             }]
         });
 
-        // 绑定UI事件（这部分也依赖CloudKit的功能）
         q('#hp_blacklist_sync_button').addEventListener('click', function(){
             if (!isCloudLogin) {
                 alert('先登录iCloud才能同步');
@@ -306,7 +308,6 @@
         q('#hp_blacklist_remove_btn').addEventListener('click', function(){ removeUser(q('#hp_blacklist_username_input').value); }, false);
 
         demoSetUpAuth();
-        // 注意：这里的init()是cloudkit相关的初始化，本地功能的init()已在前面执行
         console.log('CloudKit features initialized.');
     }
 
@@ -564,13 +565,9 @@
                     link.style.color = '#999999';
                 }
 
-                // 【核心修改】监听 mousedown 事件，并检查鼠标按键
                 link.addEventListener('mousedown', function(event) {
-                    // event.button === 0  -> 鼠标左键
-                    // event.button === 1  -> 鼠标中键 (滚轮)
-                    // 我们只处理这两种情况，忽略右键 (event.button === 2)
                     if (event.button === 0 || event.button === 1) {
-                        link.style.color = '#999999'; // 立即变灰
+                        link.style.color = '#999999';
 
                         let currentVisited = GM_getValue(VISITED_THREADS_KEY, []);
                         if (!currentVisited.includes(threadId)) {
@@ -583,12 +580,7 @@
                     }
                 });
 
-                // 为了防止在右键点击时，浏览器默认的拖拽行为影响体验，
-                // 我们可以阻止 mousedown 事件后的默认行为，但这可能会有其他副作用。
-                // 经过权衡，目前仅判断button的方式是副作用最小的。
-                // 如果需要，可以添加以下代码来阻止右键拖拽：
                 link.addEventListener('dragstart', function(event) {
-                    // 如果拖拽是由非左键发起的，可以阻止它
                     if(event.button !== 0) {
                        // event.preventDefault();
                     }
