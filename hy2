@@ -1,0 +1,57 @@
+log-level: error
+tcp-concurrent: true
+profile:
+  store-selected: true
+mode: rule
+dns:
+  enable: true
+  cache-algorithm: arc
+  ipv6-timeout: 2
+  ipv6: true
+  enhanced-mode: fake-ip 
+  respect-rules: true
+  direct-nameserver:
+    - 10.10.10.1:2222
+  nameserver:
+    - 10.10.10.1
+  fallback:
+    - 10.10.10.1
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 28.0.0.0/8
+      - 2001:2::1/64
+  proxy-server-nameserver:
+    - 223.5.5.5
+
+proxies:
+- name: "home"
+  type: hysteria2
+  server: 
+  port: 
+  password: 
+  up: "100 Mbps"
+  down: "100 Mbps"
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+    - h3
+
+rules:
+- IP-CIDR,10.10.10.0/24,home
+- IP-CIDR,192.168.1.0/24,home
+- IP-CIDR,28.0.0.0/8,home
+- IP-CIDR6,2001:2::1/64,home
+- IP-CIDR,5.28.192.0/18,home
+- IP-CIDR,216.239.36.0/24,home
+- IP-CIDR,91.108.56.0/22,home
+- IP-CIDR,91.108.4.0/22,home
+- IP-CIDR,91.108.8.0/22,home
+- IP-CIDR,91.108.16.0/22,home
+- IP-CIDR,91.108.12.0/22,home
+- IP-CIDR,149.154.160.0/20,home
+- IP-CIDR,91.105.192.0/23,home
+- IP-CIDR,91.108.20.0/22,home
+- IP-CIDR,95.161.64.0/20,home
+- IP-CIDR,185.76.151.0/24,home
+- MATCH,DIRECT
