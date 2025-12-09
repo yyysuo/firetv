@@ -1,13 +1,15 @@
-ÔÚmosdns1204allÅäÖÃµÄ»ù´¡ÉÏÉı¼¶
-1£º±¸·İÕû¸ömosdnsÎÄ¼ş¼Ğ
-2£ºwebÉÏ¸üĞÂ2½øÖÆ
-3£ºÔÚÏµÍ³-ÅäÖÃ¹ÜÀí²¿·Ö
-MosDNS ±¾µØ¹¤×÷Ä¿Â¼ÌîÈë×Ô¼ºµÄmosdnsÅäÖÃËùÔÚÄ¿Â¼£¬±ÈÈç/cus/mosdns
-Ô¶³ÌÅäÖÃÏÂÔØ URL (ZIP)ÌîÈë£ºhttps://raw.githubusercontent.com/yyysuo/firetv/refs/heads/master/mosdnsconfigupdate/mosdns20251204allup1.zip
-È»ºóµã»÷£ºÓ¦ÓÃÔ¶³ÌÅäÖÃ£¬mosdns×Ô¶¯ÖØÆô¡£
+åœ¨mosdns1204allé…ç½®çš„åŸºç¡€ä¸Šå‡çº§
+1ï¼šå¤‡ä»½æ•´ä¸ªmosdnsæ–‡ä»¶å¤¹
+2ï¼šwebä¸Šæ›´æ–°2è¿›åˆ¶
+3ï¼šåœ¨ç³»ç»Ÿ-é…ç½®ç®¡ç†éƒ¨åˆ†
+MosDNS æœ¬åœ°å·¥ä½œç›®å½•å¡«å…¥è‡ªå·±çš„mosdnsé…ç½®æ‰€åœ¨ç›®å½•ï¼Œæ¯”å¦‚/cus/mosdns
+è¿œç¨‹é…ç½®ä¸‹è½½ URL (ZIP)å¡«å…¥ï¼šhttps://raw.githubusercontent.com/yyysuo/firetv/refs/heads/master/mosdnsconfigupdate/mosdns20251204allup1.zip
+ç„¶åç‚¹å‡»ï¼šåº”ç”¨è¿œç¨‹é…ç½®ï¼Œmosdnsè‡ªåŠ¨é‡å¯ã€‚
 
-¸üĞÂËµÃ÷£º
-ÒÆ³ıÁËÒ»Ğ©ÔçÒÑ·ÏÆúµÄÂß¼­
-Çë×ÔĞĞÉ¾³ıÎÄ¼ş/cus/mosdns/sub_config/forward_2.yaml
-Çë×ÔĞĞÉ¾³ımosdnsÎÄ¼ş¼ĞÏÂ»º´æÎÄ¼ş£¬ËùÓĞcacheÎÄ¼şÒÑÒÆ¶¯ÖÁmosdns/cache/
-web uiÉÏÌí¼ÓÁË2²ã¹ıÆÚ»º´æµÄ¶ÀÁ¢¿ª¹Ø£¬Ä¿Ç°ÒÑ¿É¶ÀÁ¢½øĞĞ¿ØÖÆ
+æ›´æ–°è¯´æ˜ï¼š
+æ­¤æ¬¡æ›´æ–°ä¸ä¼šè¦†ç›–ä¸ªæ€§åŒ–é…ç½®
+ç§»é™¤äº†ä¸€äº›æ—©å·²åºŸå¼ƒçš„é€»è¾‘
+è¯·è‡ªè¡Œåˆ é™¤æ–‡ä»¶/cus/mosdns/sub_config/forward_2.yaml
+è¯·è‡ªè¡Œåˆ é™¤mosdnsæ–‡ä»¶å¤¹ä¸‹ç¼“å­˜æ–‡ä»¶ï¼Œæ‰€æœ‰cacheæ–‡ä»¶å·²ç§»åŠ¨è‡³mosdns/cache/
+web uiä¸Šæ·»åŠ äº†2å±‚è¿‡æœŸç¼“å­˜çš„ç‹¬ç«‹å¼€å…³ï¼Œç›®å‰å·²å¯ç‹¬ç«‹è¿›è¡Œæ§åˆ¶
+
