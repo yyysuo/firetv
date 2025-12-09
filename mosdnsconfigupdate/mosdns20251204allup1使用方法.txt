@@ -5,3 +5,9 @@
 MosDNS 本地工作目录填入自己的mosdns配置所在目录，比如/cus/mosdns
 远程配置下载 URL (ZIP)填入：https://raw.githubusercontent.com/yyysuo/firetv/refs/heads/master/mosdnsconfigupdate/mosdns20251204allup1.zip
 然后点击：应用远程配置，mosdns自动重启。
+
+更新说明：
+移除了一些早已废弃的逻辑
+请自行删除文件/cus/mosdns/sub_config/forward_2.yaml
+请自行删除mosdns文件夹下缓存文件，所有cache文件已移动至mosdns/cache/
+web ui上添加了2层过期缓存的独立开关，目前已可独立进行控制
