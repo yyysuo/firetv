@@ -1,0 +1,13 @@
+0：此次为实验性更新，小概率会出现bug导致分流错误（待小白鼠验证）。
+1：去除了几个重复的drop_resp
+2：修改88端口为99避免冲突，注意同步修改stash、clashmi配置
+3：mihomocn fakeip与cache_all共用，拯救一下mihomo的fakeip响应速度
+4：优化77、99端口逻辑
+
+在mosdns20251204allup4配置的基础上升级
+1：备份整个mosdns文件夹
+2：web上更新2进制
+3：在系统-配置管理部分
+MosDNS 本地工作目录填入自己的mosdns配置所在目录，比如/cus/mosdns
+远程配置下载 URL (ZIP)填入：https://raw.githubusercontent.com/yyysuo/firetv/refs/heads/master/mosdnsconfigupdate/mosdns20251204allup5.zip
+然后点击：应用远程配置，mosdns自动重启。
