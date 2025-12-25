@@ -1,0 +1,28 @@
+启用方法：
+在系统-高级设置-上游DNS设置/其它设置中添加6条规则，把新值列改为自己nft规则中的值
+原值                               新值                                  说明
+nft_false                       nft_true                             启用添加nft规则功能
+nft/nft.conf                  /cus/sbmi.conf                  当前在用的sing-box虚拟机nft规则文件
+sing-box                      sing-box                            nft规则文件中的table名称
+local_ipv4                    local_ipv4                           nft规则文件中的ipset名称，在线规则集中的ipv4将更新到此ipset
+local_ipv6                    local_ipv6                           nft规则文件中的ipset名称，在线规则集中的ipv6将更新到此ipset
+nft/fixip.txt                  nft/fixip.txt                         当前在用的需要代理的ip全集，一般是nft规则文件中的local_ipv4、local_ipv6的ip范围合并
+
+fixip.txt格式如下
+52.0.131.132/32
+3.221.228.214/32
+2001:b28:f23d::/48
+2001:b28:f23f::/48
+
+触发场景：
+1：mosdns启动时。
+2：在规则管理-在线分流中自动更新、手动更新类型为nft_add的在线srs规则时。
+
+插件按顺序执行如下动作：
+1：将nft_add类型的在线ip集和fixip.txt中的ip集合并去重。
+2：使用nft delete命令删除配置项目中指定的table
+3：使用nft -f命令重新加载配置项目中指定的table
+4：清空指定table中的指定ipset
+5：把合并后的ip集中的条目按ipv4、ipv6分别添加至指定table的指定ipset中。
+
+如果不是op aio，主路由中的静态路由仍然需要手动添加。
