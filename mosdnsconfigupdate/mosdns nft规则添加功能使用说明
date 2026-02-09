@@ -16,7 +16,9 @@ ebpf生效验证方法
 2：如果连接类型type为redirect入站名称，则ebpf未运行。
 
 启用方法
-注意：nft/ebpf仅支持linux和openwrt，linux内核>= 6.6，目前仅在openwrt 6.18内核上测试成功
+注意：
+1：nft/ebpf仅支持linux和openwrt，linux内核>= 6.6，目前仅在openwrt 6.18内核上测试成功
+2：仅建议sing-box mosdns装在一起的场景使用，同时禁用掉虚拟机中原有的nft规则。
 
 编辑mosdns/nft/nft.conf
 1：搜索7895，改为自己的sing-box tproxy入站端口，共1处
