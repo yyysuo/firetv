@@ -1,3 +1,42 @@
+此劫持方案优点
+1：可在线更新netflix ip集及telegram ip集
+2：仅劫持fakeip及少数需要代理ip，无回环风险，效率高。
+
+分流方案
+启用ebpf时
+1：非80端口的lan侧tcp流量将被ebpf程序直接劫持到tproxy端口
+2：其它流量由nft规则劫持，udp送入trpoxy端口，tcp送入redirect端口。
+
+不启用ebpf时
+1：所有流量由nft劫持，udp送入trpoxy端口，tcp送入redirect端口。
+
+启用方法
+注意：nft/ebpf仅支持linux和openwrt，linux内核>= 6.6，目前仅在openwrt 6.18内核上测试成功
+
+编辑mosdns/nft/nft.conf
+1：搜索7895，改为自己的sing-box tproxy入站端口，共1处
+2：搜索7899，改为自己的sing-box redirect入站端口，共4处
+下面为可选项
+3：搜索7892，改为自己的mihomo redirect入站端口，共4处
+4：搜索7893，改为自己的mihomo tproxy入站端口，共1处
+5：搜索30.0.0.0/8，改为自己的mihomo（国内）fakeip v4 range，共1处
+6：搜索2400::1/64，改为自己的mihomo（国内）fakeip v6 range，共1处
+
+在系统-高级设置-上游DNS设置/其它设置中添加2条规则
+原值                               新值                                  说明
+nft_false                          nft_true                              启用添加nft规则功能
+ebpf_false                         ebpf_true                             启用ebpf加速，不启用ebpf，后面条目都不需要添加
+
+后面为可选条目，仅针对ebpf
+br-lan                             ens0                                  ebpf程序绑定的网卡名称，如果不启用可不配置，如果为openwrt也可不配置
+7893                               7893                                  mihomo tproxy入站，如果为7893可不配置此行
+7895                               7895                                  sing-box tproxy入站，如果为7895可不配置此行
+30.0.0.0/8                         30.0.0.0/8                            mihomo fakeip ipv4 range
+2400::/64                          2400::/64                             mihomo fakeip ipv6 range
+
+
+
+===旧教程过于技术了，有兴趣的可以自行研究
 启用方法：
 在系统-高级设置-上游DNS设置/其它设置中添加6条规则，把新值列改为自己nft规则中的值
 原值                               新值                                  说明
