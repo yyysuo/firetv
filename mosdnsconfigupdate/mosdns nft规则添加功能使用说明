@@ -1,6 +1,7 @@
 此劫持方案优点
 1：可在线更新netflix ip集及telegram ip集
 2：仅劫持fakeip及少数需要代理ip，无回环风险，效率高。
+3：dns可由ebpf技术加速，直接送入mosdns 53端口，不经过netfilter
 
 分流方案
 启用ebpf时
