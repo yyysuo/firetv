@@ -11,6 +11,10 @@
 不启用ebpf时
 1：所有流量由nft劫持，udp送入trpoxy端口，tcp送入redirect端口。
 
+ebpf生效验证方法
+1：在mihomo或者sing-box web ui中点击任意tcp连接，如果连接类型type为tproxy入站名称，则ebpf运行正常。
+2：如果连接类型type为redirect入站名称，则ebpf未运行。
+
 启用方法
 注意：nft/ebpf仅支持linux和openwrt，linux内核>= 6.6，目前仅在openwrt 6.18内核上测试成功
 
