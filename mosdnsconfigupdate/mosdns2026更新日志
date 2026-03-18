@@ -5,6 +5,9 @@
 默认不开启，开启需要在系统-高级设置-其它设置中添加2个条目
 ebpf_nohijack  ebpf_hijack     开启ebpf dns劫持功能
 10.10.10.1     192.168.1.100   ebpf劫持dns的ip地址
+
+
+下面为配置中插件的默认配置，无须修改，仅供参考。
   - tag: nft_add
     type: nft_add
     args:
