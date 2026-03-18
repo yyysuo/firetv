@@ -1,3 +1,37 @@
+2026年3月18日更新 二进制+配置
+1：废弃了prefer ipv4及prefer ipv6
+2：修复开启ebpf功能时，nslookup www.baidu.com 223.5.5.5超时问题
+3：nft_add插件添加了4个配置项目（最后4个），把ebpf的dns劫持功能独立出来了，且可以指定劫持的dip。
+默认不开启，开启需要在系统-高级设置-其它设置中添加2个条目
+ebpf_nohijack  ebpf_hijack     开启ebpf dns劫持功能
+10.10.10.1     192.168.1.100   ebpf劫持dns的ip地址
+  - tag: nft_add
+    type: nft_add
+    args:
+      socks5: ""
+      local_config: "nft/nftadd.json"
+      nft_config:
+        enable: "nft_false"
+        startup_delay: 5
+        table_family: "inet"
+        table_name: "sing-box"
+        set_v4: "local_ipv4"
+        set_v6: "local_ipv6"
+        fixip: "nft/fixip.txt"
+        nftfile: "nft/nft.conf"
+        ebpf_enable: "ebpf_false"
+        ebpf_iface: "br-lan"
+        mihomo_port: "7893"
+        singbox_port: "7895"
+        mihomo_fakeip_v4: "30.0.0.0/8"
+        mihomo_fakeip_v6: "2400::/64"
+        purenft: "nft/purenft.conf" #不使用ebpf功能时的nft规则 
+        dns_hijack: "ebpf_nohijack" # 填入 "ebpf_hijack" 激活精准劫持。填其它值或留空则关闭 eBPF DNS 劫持
+        hjack_dip4: "10.10.10.1"  # 主路由的局域网 IPv4 地址。务必是单个 IP，不要带 /24 掩码
+#        hjack_dip6: "fd00::1"     # 主路由的局域网 IPv6 地址。如果你的内网没有 IPv6，可以留空 ""
+
+4：未开启ebpf相关功能时，nft规则默认使用nft/purenft.conf，开启ebpf功能时，nft规则默认使用nft/nft.conf。
+
 2026年3月17日更新 二进制+配置
 1：重构配置。
 2：现在生成的域名规则会立即生效，不需要再等到10小时。
