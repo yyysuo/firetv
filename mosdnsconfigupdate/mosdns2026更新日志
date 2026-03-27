@@ -1,3 +1,8 @@
+2026年3月27日 二进制+配置
+1：二进制增加ebpf过期缓存功能，启用ebpf dns劫持功能时性能翻倍。
+2：配置中更新了nft规则。
+3：当不启用ebpf功能时，使用单独的nft配置nft/purenft.conf，无须特别配置。
+
 2026年3月18日更新 二进制+配置
 1：废弃了prefer ipv4及prefer ipv6
 2：修复开启ebpf功能时，nslookup www.baidu.com 223.5.5.5超时问题
