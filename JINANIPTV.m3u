@@ -47,6 +47,10 @@ http://10.10.10.1:7088/rtp/239.253.242.184:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.186:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="浙江卫视4K" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/浙江卫视4K.png" group-title="卫视",浙江卫视4K
 http://10.10.10.1:7088/rtp/239.253.242.27:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="山东卫视4K" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东卫视4K.png" group-title="山东",山东卫视4K
+http://10.10.10.1:7088/rtp/239.253.242.172:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="爱上4K测试体验" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/爱上4K测试体验.png" group-title="其他",爱上4K测试体验
+http://10.10.10.1:7088/rtp/239.253.242.102:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="湖南卫视4K" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/湖南卫视4K.png" group-title="卫视",湖南卫视4K
 http://10.10.10.1:7088/rtp/239.253.242.28:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="江苏卫视4K" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/江苏卫视4K.png" group-title="卫视",江苏卫视4K
@@ -61,6 +65,8 @@ http://10.10.10.1:7088/rtp/239.253.242.108:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.61:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="四川卫视4K" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/四川卫视4K.png" group-title="卫视",四川卫视4K
 http://10.10.10.1:7088/rtp/239.253.242.123:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东卫视.png" group-title="山东",山东卫视
+http://10.10.10.1:7088/rtp/239.253.242.78:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/浙江卫视.png" group-title="卫视",浙江卫视
 http://10.10.10.1:7088/rtp/239.253.242.84:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/湖南卫视.png" group-title="卫视",湖南卫视
@@ -123,20 +129,16 @@ http://10.10.10.1:7088/rtp/239.253.242.56:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.74:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/兵团卫视.png" group-title="卫视",兵团卫视
 http://10.10.10.1:7088/rtp/239.253.242.57:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山西卫视.png" group-title="卫视",山西卫视
-http://10.10.10.1:7088/rtp/239.253.242.48:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="农林卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/农林卫视.png" group-title="卫视",农林卫视
-http://10.10.10.1:7088/rtp/239.253.242.70:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="厦门卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/厦门卫视.png" group-title="卫视",厦门卫视
-http://10.10.10.1:7088/rtp/239.253.242.106:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="延边卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/延边卫视.png" group-title="卫视",延边卫视
-http://10.10.10.1:7088/rtp/239.253.242.121:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="三沙卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/三沙卫视.png" group-title="卫视",三沙卫视
-http://10.10.10.1:7088/rtp/239.253.242.171:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="山东卫视4K" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东卫视4K.png" group-title="山东",山东卫视4K
-http://10.10.10.1:7088/rtp/239.253.242.172:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东卫视.png" group-title="山东",山东卫视
-http://10.10.10.1:7088/rtp/239.253.242.78:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/精彩影视.png" group-title="其他",精彩影视
+http://10.10.10.1:7088/rtp/239.253.242.142:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CHC%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2.png" group-title="其他",CHC家庭影院
+http://10.10.10.1:7088/rtp/239.253.242.152:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="CHC动作电影" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CHC%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1.png" group-title="其他",CHC动作电影
+http://10.10.10.1:7088/rtp/239.253.242.153:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CHC%E5%BD%B1%E8%BF%B7%E7%94%B5%E5%BD%B1.png" group-title="其他",CHC影迷电影
+http://10.10.10.1:7088/rtp/239.253.242.154:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/都市剧场.png" group-title="其他",都市剧场
+http://10.10.10.1:7088/rtp/239.253.242.98:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="山东齐鲁" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/%E5%B1%B1%E4%B8%9C%E9%BD%90%E9%B2%81.png" group-title="山东",山东齐鲁
 http://10.10.10.1:7088/rtp/239.253.242.18:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="山东新闻" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东新闻.png" group-title="山东",山东新闻
@@ -175,16 +177,12 @@ http://10.10.10.1:7088/rtp/239.253.242.94:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.99:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="环球旅游" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/%E7%8E%AF%E7%90%83%E6%97%85%E6%B8%B8.png" group-title="购物",环球旅游
 http://10.10.10.1:7088/rtp/239.253.242.71:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="爱上4K测试体验" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/爱上4K测试体验.png" group-title="其他",爱上4K测试体验
-http://10.10.10.1:7088/rtp/239.253.242.102:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/CGTN.png" group-title="其他",CGTN
 http://10.10.10.1:7088/rtp/239.253.242.17:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="武术世界" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/武术世界.png" group-title="其他",武术世界
 http://10.10.10.1:7088/rtp/239.253.242.140:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="文物宝库" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/文物宝库.png" group-title="其他",文物宝库
 http://10.10.10.1:7088/rtp/239.253.242.141:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="精彩影视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/精彩影视.png" group-title="其他",精彩影视
-http://10.10.10.1:7088/rtp/239.253.242.142:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="快乐垂钓" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/快乐垂钓.png" group-title="其他",快乐垂钓
 http://10.10.10.1:7088/rtp/239.253.242.144:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="四海钓鱼" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/四海钓鱼.png" group-title="其他",四海钓鱼
@@ -195,14 +193,6 @@ http://10.10.10.1:7088/rtp/239.253.242.161:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.95:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/金鹰纪实.png" group-title="其他",金鹰纪实
 http://10.10.10.1:7088/rtp/239.253.242.103:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="CHC家庭影院" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CHC%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2.png" group-title="其他",CHC家庭影院
-http://10.10.10.1:7088/rtp/239.253.242.152:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="CHC动作电影" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CHC%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1.png" group-title="其他",CHC动作电影
-http://10.10.10.1:7088/rtp/239.253.242.153:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="CHC影迷电影" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CHC%E5%BD%B1%E8%BF%B7%E7%94%B5%E5%BD%B1.png" group-title="其他",CHC影迷电影
-http://10.10.10.1:7088/rtp/239.253.242.154:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="都市剧场" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/都市剧场.png" group-title="其他",都市剧场
-http://10.10.10.1:7088/rtp/239.253.242.98:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="法治天地" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/法治天地.png" group-title="其他",法治天地
 http://10.10.10.1:7088/rtp/239.253.242.96:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="优优宝贝" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/优优宝贝.png" group-title="其他",优优宝贝
@@ -219,6 +209,16 @@ http://10.10.10.1:7088/rtp/239.253.242.231:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.129:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="爱体育" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/IPTV5+.png" group-title="轮播",爱体育
 http://10.10.10.1:7088/rtp/239.253.242.109:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山西卫视.png" group-title="卫视",山西卫视
+http://10.10.10.1:7088/rtp/239.253.242.48:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="农林卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/农林卫视.png" group-title="卫视",农林卫视
+http://10.10.10.1:7088/rtp/239.253.242.70:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="厦门卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/厦门卫视.png" group-title="卫视",厦门卫视
+http://10.10.10.1:7088/rtp/239.253.242.106:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="延边卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/延边卫视.png" group-title="卫视",延边卫视
+http://10.10.10.1:7088/rtp/239.253.242.121:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="三沙卫视" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/三沙卫视.png" group-title="卫视",三沙卫视
+http://10.10.10.1:7088/rtp/239.253.242.171:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="山东鲁中" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南鲁中.png" group-title="山东",山东鲁中
 http://10.10.10.1:7088/rtp/239.253.242.244:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="山东经济广播" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/fac726f09113e00345fa1103d7e2b8cc8c7faa57/radio/%E5%B1%B1%E4%B8%9C%E7%BB%8F%E6%B5%8E%E5%B9%BF%E6%92%AD.png" group-title="山东",山东经济广播
