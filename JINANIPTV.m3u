@@ -155,43 +155,19 @@ http://10.10.10.1:7088/rtp/239.253.242.24:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.59:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="山东体育" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东体育.png" group-title="山东",山东体育
 http://10.10.10.1:7088/rtp/239.253.242.22:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="山东鲁中" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南鲁中.png" group-title="山东",山东鲁中
-http://10.10.10.1:7088/rtp/239.253.242.244:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="山东经济广播" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/fac726f09113e00345fa1103d7e2b8cc8c7faa57/radio/%E5%B1%B1%E4%B8%9C%E7%BB%8F%E6%B5%8E%E5%B9%BF%E6%92%AD.png" group-title="山东",山东经济广播
-http://10.10.10.1:7088/rtp/239.253.242.166:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="山东海洋频道" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东海洋频道.png" group-title="山东",山东海洋频道
-http://10.10.10.1:7088/rtp/239.253.242.67:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="看山东" tvg-logo="" group-title="山东",看山东
-http://10.10.10.1:7088/rtp/239.253.242.81:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南商河" tvg-logo="" group-title="济南",济南商河
+#EXTINF:-1 tvg-name="济南商河" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E5%95%86%E6%B2%B3%E7%BB%BC%E5%90%88.png" group-title="济南",济南商河
 http://10.10.10.1:7088/rtp/239.253.242.240:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南济阳" tvg-logo="" group-title="济南",济南济阳
+#EXTINF:-1 tvg-name="济南济阳" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E6%B5%8E%E9%98%B3%E7%BB%BC%E5%90%88.png" group-title="济南",济南济阳
 http://10.10.10.1:7088/rtp/239.253.242.245:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="济南新闻" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南新闻综合.png" group-title="济南",济南新闻
 http://10.10.10.1:7088/rtp/239.253.242.254:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="济南教育" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E6%B5%8E%E5%8D%97%E6%95%99%E8%82%B2.png" group-title="济南",济南教育
 http://10.10.10.1:7088/rtp/239.253.242.246:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南历城" tvg-logo="" group-title="济南",济南历城
-http://10.10.10.1:7088/rtp/239.253.242.253:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南平阴" tvg-logo="" group-title="济南",济南平阴
-http://10.10.10.1:7088/rtp/239.253.242.247:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南文旅" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E6%B5%8E%E5%8D%97%E6%96%87%E6%97%85.png" group-title="济南",济南文旅
-http://10.10.10.1:7088/rtp/239.253.242.249:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南生活" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南生活.png" group-title="济南",济南生活
-http://10.10.10.1:7088/rtp/239.253.242.251:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南都市" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南都市.png" group-title="济南",济南都市
-http://10.10.10.1:7088/rtp/239.253.242.248:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南章丘" tvg-logo="" group-title="济南",济南章丘
-http://10.10.10.1:7088/rtp/239.253.242.241:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="济南长清" tvg-logo="" group-title="济南",济南长清
-http://10.10.10.1:7088/rtp/239.253.242.242:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/金鹰卡通.png" group-title="少儿",金鹰卡通
 http://10.10.10.1:7088/rtp/239.253.242.62:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="动漫秀场" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/%E5%8A%A8%E6%BC%AB%E7%A7%80%E5%9C%BA.png" group-title="少儿",动漫秀场
 http://10.10.10.1:7088/rtp/239.253.242.115:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/金鹰卡通.png" group-title="少儿",金鹰卡通
-http://10.10.10.1:7088/rtp/239.253.242.134:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="山东购物" tvg-logo="" group-title="购物",山东购物
+#EXTINF:-1 tvg-name="山东购物" tvg-logo="https://www.tvyan.com/uploads/dianshi/jujiagouwu.jpg" group-title="购物",山东购物
 http://10.10.10.1:7088/rtp/239.253.242.104:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="东方财经" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/%E4%B8%9C%E6%96%B9%E8%B4%A2%E7%BB%8F.png" group-title="购物",东方财经
 http://10.10.10.1:7088/rtp/239.253.242.94:8000?fcc=124.132.240.66:15970
@@ -199,12 +175,6 @@ http://10.10.10.1:7088/rtp/239.253.242.94:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.99:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="环球旅游" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/%E7%8E%AF%E7%90%83%E6%97%85%E6%B8%B8.png" group-title="购物",环球旅游
 http://10.10.10.1:7088/rtp/239.253.242.71:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="环球购物" tvg-logo="https://raw.githubusercontent.com/plsy1/iptv/main/logo/聚鲨环球.png" group-title="购物",环球购物
-http://10.10.10.1:7088/rtp/239.253.242.156:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="优购物" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/%E4%BC%98%E8%B4%AD%E7%89%A9.png" group-title="购物",优购物
-http://10.10.10.1:7088/rtp/239.253.242.174:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="阳光购物" tvg-logo="" group-title="购物",阳光购物
-http://10.10.10.1:7088/rtp/239.253.242.199:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="爱上4K测试体验" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/爱上4K测试体验.png" group-title="其他",爱上4K测试体验
 http://10.10.10.1:7088/rtp/239.253.242.102:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/CGTN.png" group-title="其他",CGTN
@@ -245,6 +215,40 @@ http://10.10.10.1:7088/rtp/239.253.242.177:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.110:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="求索纪录" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/求索纪录.png" group-title="其他",求索纪录
 http://10.10.10.1:7088/rtp/239.253.242.231:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="爱综艺" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/IPTV3+.png" group-title="轮播",爱综艺
+http://10.10.10.1:7088/rtp/239.253.242.129:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="爱体育" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/IPTV5+.png" group-title="轮播",爱体育
+http://10.10.10.1:7088/rtp/239.253.242.109:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="山东鲁中" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南鲁中.png" group-title="山东",山东鲁中
+http://10.10.10.1:7088/rtp/239.253.242.244:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="山东经济广播" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/fac726f09113e00345fa1103d7e2b8cc8c7faa57/radio/%E5%B1%B1%E4%B8%9C%E7%BB%8F%E6%B5%8E%E5%B9%BF%E6%92%AD.png" group-title="山东",山东经济广播
+http://10.10.10.1:7088/rtp/239.253.242.166:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="山东海洋频道" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/山东海洋频道.png" group-title="山东",山东海洋频道
+http://10.10.10.1:7088/rtp/239.253.242.67:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="看山东" tvg-logo="" group-title="山东",看山东
+http://10.10.10.1:7088/rtp/239.253.242.81:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="济南历城" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E5%8E%86%E5%9F%8E%E7%BB%BC%E5%90%88.png" group-title="济南",济南历城
+http://10.10.10.1:7088/rtp/239.253.242.253:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="济南平阴" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E5%B9%B3%E9%98%B4%E7%BB%BC%E5%90%88.png" group-title="济南",济南平阴
+http://10.10.10.1:7088/rtp/239.253.242.247:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="济南文旅" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E6%B5%8E%E5%8D%97%E6%96%87%E6%97%85.png" group-title="济南",济南文旅
+http://10.10.10.1:7088/rtp/239.253.242.249:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="济南生活" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南生活.png" group-title="济南",济南生活
+http://10.10.10.1:7088/rtp/239.253.242.251:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="济南都市" tvg-logo="https://raw.githubusercontent.com/taksssss/tv/main/icon/济南都市.png" group-title="济南",济南都市
+http://10.10.10.1:7088/rtp/239.253.242.248:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="济南章丘" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E7%AB%A0%E4%B8%98%E7%BB%BC%E5%90%88.png" group-title="济南",济南章丘
+http://10.10.10.1:7088/rtp/239.253.242.241:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="济南长清" tvg-logo="https://raw.githubusercontent.com/SeastLeePro/live/ae4d7203d98ce47c2acab644a34962bd8c596296/tv/%E9%95%BF%E6%B8%85%E7%BB%BC%E5%90%88.png" group-title="济南",济南长清
+http://10.10.10.1:7088/rtp/239.253.242.242:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/金鹰卡通.png" group-title="少儿",金鹰卡通
+http://10.10.10.1:7088/rtp/239.253.242.134:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="环球购物" tvg-logo="https://raw.githubusercontent.com/plsy1/iptv/main/logo/聚鲨环球.png" group-title="购物",环球购物
+http://10.10.10.1:7088/rtp/239.253.242.156:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="优购物" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/%E4%BC%98%E8%B4%AD%E7%89%A9.png" group-title="购物",优购物
+http://10.10.10.1:7088/rtp/239.253.242.174:8000?fcc=124.132.240.66:15970
+#EXTINF:-1 tvg-name="阳光购物" tvg-logo="" group-title="购物",阳光购物
+http://10.10.10.1:7088/rtp/239.253.242.199:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="CGTN 法语" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CGTN%E6%B3%95%E8%AF%AD.png" group-title="其他",CGTN 法语
 http://10.10.10.1:7088/rtp/239.253.242.183:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="CGTN 俄语" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@54c56702543a2ef2da51eb4b965ee93407ac2558/logo/CGTN%E4%BF%84%E8%AF%AD.png" group-title="其他",CGTN 俄语
@@ -285,10 +289,6 @@ http://10.10.10.1:7088/rtp/239.253.242.147:8000?fcc=124.132.240.66:15970
 http://10.10.10.1:7088/rtp/239.253.242.162:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="中国教育2" tvg-logo="https://fastly.jsdelivr.net/gh/plsy1/iptv@master/logo/中国教育2.png" group-title="其他",中国教育2
 http://10.10.10.1:7088/rtp/239.253.242.107:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="爱综艺" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/IPTV3+.png" group-title="轮播",爱综艺
-http://10.10.10.1:7088/rtp/239.253.242.129:8000?fcc=124.132.240.66:15970
-#EXTINF:-1 tvg-name="爱体育" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/IPTV5+.png" group-title="轮播",爱体育
-http://10.10.10.1:7088/rtp/239.253.242.109:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="爱体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/fac726f09113e00345fa1103d7e2b8cc8c7faa57/tv/IPTV5%2B.png" group-title="轮播",爱体育
 http://10.10.10.1:7088/rtp/239.253.242.131:8000?fcc=124.132.240.66:15970
 #EXTINF:-1 tvg-name="爱电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/fac726f09113e00345fa1103d7e2b8cc8c7faa57/tv/IPTV6%2B.png" group-title="轮播",爱电影
